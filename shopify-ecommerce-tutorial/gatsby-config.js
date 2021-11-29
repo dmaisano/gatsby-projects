@@ -9,8 +9,9 @@ module.exports = {
     {
       resolve: "gatsby-source-shopify",
       options: {
-        storeUrl: process.env.SHOPIFY_STORE_URL,
         password: process.env.SHOPIFY_SHOP_PASSWORD,
+        storeUrl: process.env.SHOPIFY_STORE_URL,
+        // shopifyConnections: ["orders", "collections"],
       },
     },
     "gatsby-plugin-theme-ui",
